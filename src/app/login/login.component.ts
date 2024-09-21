@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MaterialModule } from '../material/material.module';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],
+  imports: [
+    MaterialModule
+  ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })

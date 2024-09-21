@@ -12,8 +12,8 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'cadastro', component: CadastroComponent },
     { path: 'dashboard', component: DashboardComponent },
-    { path: 'relatorios/despesas', component: DespesasComponent },
-    { path: 'relatorios/receitas', component: ReceitasComponent }, 
+    { path: 'relatorios-despesas', component: DespesasComponent },
+    { path: 'relatorios-receitas', component: ReceitasComponent }, 
     { path: 'lancamentos', loadChildren: () => import('./lancamentos/lancamentos-routing.module').then(m => m.LancamentosRoutingModule)},
     { path: '**', component: PageNotFoundComponent },
 ];
